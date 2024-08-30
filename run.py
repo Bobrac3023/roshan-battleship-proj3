@@ -35,7 +35,8 @@ def main():
     while True:
         # try and except method for input type validation 
         try:
-            codegenerator = int(input("Dear Player: Please enter a number between 1 to 9 to guess the ship position : "))
+            # add new line character inside text for odd quirk issue
+            codegenerator = int(input("Dear Player: Please enter a number between 1 to 9 to guess the ship position :\n "))
         except ValueError:
             print("The number must be a numeric value between 1 to 9")
             continue  
@@ -54,7 +55,8 @@ def main():
         print_grid(theBoard)
            # Seek user input to  continue or exit the game
         while True:
-            user_input = input('Do you wish to continue? yes/no: ').strip().lower()
+            # add new line character inside text for odd quirk issue
+            user_input = input('Do you wish to continue? yes/no:\n ').strip().lower()
             if user_input == 'yes':
                 print('You chose to continue.')
                  # generate random integer values between 1-9
