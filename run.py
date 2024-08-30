@@ -59,7 +59,6 @@ def main():
                 print('You chose to continue.')
                  # generate random integer values between 1-9
                 value = random.randint(1, 9)
-                print(value) # For debugging purposes
                 break
             elif user_input == 'no':
                 print('Sorry to see you stop. Goodbye!')

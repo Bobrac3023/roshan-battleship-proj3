@@ -30,3 +30,60 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 ---
 
 Happy coding!
+
+# Battleship Game - Guess the Ship Location
+
+
+# Introduction
+
+
+# Features
+-The project code is written in python 3.
+
+
+# Existing Features
+
+
+# Deployment
+## Deployment from GitHub
+-The site was deployed to GitHub pages as below.
+-In the GitHub repository,navigate to the Settings tab,select pages, under **Branch** dropdown change to **Main** hub from **none**.
+
+-select_branch_github_deployment
+
+-From the **Actions** tab, select **Deployment** to check deployment status and capture external link.
+
+## Github_page_deployment
+
+-Once the main branch has been selected, the page will automatically refresh to indicate the successful deployment.
+
+-The live link can be found here - https://bobrac3023.github.io/Project2-Quiz/
+
+## Deployment from gitpod
+-Site deployed from Gitpod using python http server
+
+### python3_http_server
+
+-website viewed from Code Institute IDE Enviroment
+
+### website_code_ide_environment
+
+-use gitpod commands to add, commit code to gitub repository
+
+#### git_add_commit_command
+
+-gitpod push command to push commited changes to github repository
+
+#### git_push
+
+# Credits
+-Extra help to understand key Javascript scripts (https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37).
+-Understand how to design the quiz (https://www.sitepoint.com/simple-javascript-quiz/).
+-Understand var and const declarations (https://www.giraffeacademy.com/web-development/javascript/building-a-quiz/).
+
+## Content
+-How to design, structure and write code instructions taken from (https://www.youtube.com/watch?v=PBcqGxrr9g8).
+-The icons in the footer and header were taken from Font Awesome.
+
+## Media
+-The photo used for Favicon is from the author's own cat
