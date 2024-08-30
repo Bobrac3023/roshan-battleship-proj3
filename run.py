@@ -22,13 +22,52 @@ def print_board(theBoard):
     print("--+---+--")
     print(f"{theBoard[7]} | {theBoard[8]} | {theBoard[9]}")
 
-print_board(theBoard)# testing purpose only 
+#print_board(theBoard)# testing purpose only 
+""" Check if user_input matches random_generator number"""
+def match(random_generator, user_input):
+ return random_generator == user_input
 
 """ Main function to run the game """
 def main():
     # generate random integer values between 1-9
     value = random.randint(1, 9)  
-    print("Computer Says - Ship is hidden at a position between 1 to 9:")  
+    print("Computer Says - Ship is hidden at position between 1 to 9:")  
     print(value) # For debugging purposes
-main() # for debugging purpose
+
+    while True:
+        # try and except method for input type validation 
+        try:
+            codegenerator = int(input("Dear Player: Please enter a number between 1 to 9 to guess the ship position : "))
+        except ValueError:
+            print("The number must be a numeric value between 1 to 9")
+            continue  
+        if codegenerator < 1 or codegenerator > 9:
+            print("The number must be between 1 and 9.")
+            continue
+        # Compare result , mark "H" for hit or "X" for miss and "L" for ship location ( in case of a miss) 
+        if match(value, codegenerator):
+            print("You have hit the jackpot! Well done !!!")
+            theBoard[codegenerator] = "H"  # Mark a hit on the board
+        else:
+            print("OOPS you missed !!!. The ship's location is at L")
+            theBoard[codegenerator] = "X"  # Mark a miss on the board
+            theBoard[value]="L" # Mark "H" for the correct position
+        # Print the updated board
+        print_board(theBoard)
+           # Seek user input to  continue or exit the game
+        while True:
+            user_input = input('Do you wish to continue? yes/no: ').strip().lower()
+            if user_input == 'yes':
+                print('You chose to continue.')
+                value = random.randint(1, 9)
+                print(value) # For debugging purposes
+                break
+            elif user_input == 'no':
+                print('You chose to stop. Goodbye!')
+                return  # Exit the function and end the game
+            else:
+                print('Please type "yes" or "no" in lowercase .')
+
+""" Main function to start the game"""
+main()
 
