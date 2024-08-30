@@ -22,5 +22,13 @@ def print_board(theBoard):
     print("--+---+--")
     print(f"{theBoard[7]} | {theBoard[8]} | {theBoard[9]}")
 
-print_board(theBoard)
+print_board(theBoard)# testing purpose only 
+
+""" Main function to run the game """
+def main():
+    # generate random integer values between 1-9
+    value = random.randint(1, 9)  
+    print("Computer Says - Ship is hidden at a position between 1 to 9:")  
+    print(value) # For debugging purposes
+main() # for debugging purpose
 
