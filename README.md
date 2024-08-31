@@ -38,34 +38,67 @@ The battelship game is one of the most popular game used to demonstrate the use 
 The choice of this game for this project is to present the ***user*** with a game of logic, where their skills are tested against a machine, in this case a computer. It is a ***single player*** game, wherein the computer generates a random number to mark the ships location. A ***3x3*** grid presents a visual representation for hits, misses, and the ships location. The user is presented with relevant messages for guidance throughout the game. 
 
 ## Features
--The project code is written in python 3.  
+-The project code is written in python 3 inside the code institute IDE.   
 -Github is used to host the repository.  
--The logic for the entire coding is broken up in multiple parts- ***functions, while-if-else loops*** and ***try except*** methods.  
+-The logic for the entire coding is broken up in multiple parts- ***functions, while-if-else loops*** and ***try except*** methods.
+![mindmanager_gamee_logic](readme.doc/mindmanager_gamee_logic.png)
+
 -Import of ***dateline*** module to display the date, month, year and time in UTC.  
 -Import of  ***random*** module to generate random numbers for the game.  
+
 -A 3x3 grid displays numbers from 1 to 9 . Used for visual representation of the ship location, hits and misses during the game.  
--A ***match***function **checks and matches** the  ***user_input*** with input from the random module.  
--A ***Main*** function with a ***while*** loop for input value and data type validation.  
-    -The input solicited from the users is an ***integer*** between 1 to 9. Floats and strings are not allowed.  
-    - ***try except*** method is used to handle exceptions.   
-    -Relevant ***print*** messages warn the user about what input is expected.  
--The ***Main*** function also includes a ***while--if-elif-else*** loop to solicit user response after every input.  
-    -The input solicited from the user is a ***yes*** or ***no***. Floats and integers are not allowed.  
-    -If the user input is"yes", a new random number is generated and game continues.  
-    -If the user input is "no", the games exits and user is displayed a **Goodbye** message.  
+-A ***match*** function **checks and matches** the  ***user_input*** with input from the ***random module***.  
+
+-A ***Main*** function ***FIRST*** checks for input value and data type validation  with a ***while--if-else*** loop .  
+- The input solicited from the users is an ***integer*** between 1 to 9. ***Floats and strings*** are not allowed.  
+- ***try except*** method is used to handle exceptions.  
+- Relevant ***print*** messages warn the user about what input is expected.  
+
+-The Second part of the ***Main*** function has a ***while--if-elif-else*** loop to solicit user response after every input.  
+- The input solicited from the user is a ***yes*** or ***no***. ***Floats and integers*** are not allowed.  
+- If the user input is"yes", a new random number is generated and game continues.  
+- If the user input is "no", the games exits and user is displayed a **Goodbye** message.   
+
 -The ***Grid*** displays **"H"** for hits, **"X"** for misses and **"L** for the correct ship position.  
 -The game is designed to allow the user to play as long as they wish.  
 
-
-
+## Testing Code
 
 ## Existing Features
 
+## Validator Testing
+-Each piece of code and function was tested independently and with other functions using three tools listed below:-  
+- Test functions and pieces of code at Programmiz.com  (https://www.programiz.com/online-compiler/7oVd1BFsuE3Bd).  
+- Visualize Code execution - pythontutor (https://pythontutor.com/cp/composingprograms.html#mode=edit).  
+- gitpod IDE environment  (https://bobrac3023-roshanbattle-cv53bgpnc73.ws-us115.gitpod.io/).  
+
+
+### Testing and validating print_board function
+
+![print_board_function_test](readme.doc/print_board_function_output.png)
+![print_board_online_compiler](readme.doc/print_board_online_compiler_test.png)
+![print_board_pythontutor_visualization](readme.doc/print_board_pythontutor_visualization.png)
+
+### Testing and validating random no generation inside the Main function
+
+![random_no_function_test](readme.doc/random_no_function_test.png)
+![random_no_gitio_test](readme.doc/random_no_gitio_test.png)
+![random_no_pythontutor_visualization](readme.doc/random_no_pythontutor_visualizaton.png)
+
+### Testing and validating input type and data type inside the Main function
+![input_validation_function](readme.doc/input_validation_function.png)
+![input_type_validation](readme.doc/input_type_validation.png)
+![input_function_pythontuor_visualization](readme.doc/input_fuction_pythontutor_visualization.png)
+![usser_input_yes_no_test](readme.doc/user_input_yes_no_test.png)
 
 ## Deployment
+
 ### Deployment from GitHub
--The site was deployed to GitHub pages as below.
--In the GitHub repository,navigate to the Settings tab,select pages, under **Branch** dropdown change to **Main** hub from **none**.
+-The site was deployed to GitHub pages as below.  
+-In the GitHub repository,
+-   Navigate to the Settings tab,
+-   Select pages
+-   Under **Branch** dropdown, change to **Main** hub from **none**.
 
 -select_branch_github_deployment
 
@@ -91,7 +124,11 @@ The choice of this game for this project is to present the ***user*** with a gam
 ##### git_add_commit_push_command
 
 -use gitpod commands to add, commit code to gitub repository.  
--gitpod push command to push commited changes to github repository
+-gitpod push command to push commited changes to github repository 
+
+![add,commit,push](readme.doc/add_commit_push_github.png)
+
+
 
 
 ## Credits

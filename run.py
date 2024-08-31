@@ -15,7 +15,7 @@ for i in range(9, 0, -1):
     theBoard[i] = str(i)
 
 """ Function to print 3x3 grid"""
-def print_grid(theBoard):
+def print_board(theBoard):
     print(f"{theBoard[1]} | {theBoard[2]} | {theBoard[3]}")
     print("--+---+--")
     print(f"{theBoard[4]} | {theBoard[5]} | {theBoard[6]}")
@@ -52,7 +52,7 @@ def main():
             theBoard[codegenerator] = "X"  # Mark X for a miss on the board
             theBoard[value]="L" # Mark "L" for the correct position
         # Print the updated grid
-        print_grid(theBoard)
+        print_board(theBoard)
            # Seek user input to  continue or exit the game
         while True:
             # add new line character inside text for odd quirk issue
