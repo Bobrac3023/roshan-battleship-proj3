@@ -38,7 +38,23 @@ Happy coding!
 
 
 ## Features
--The project code is written in python 3.
+-The project code is written in python 3.  
+-The logic for the entire coding is broken up in multiple parts.  
+-Import of ***dateline*** module to display the date, month, year and time in UTC.  
+-Import of  ***random*** module to generate random numbers for the game.  
+-A 3x3 grid displays numbers from 1 to 9 . Used for visual representation of the ship location, hits and misses during the game.  
+-A ***match***function **checks and matches** the  ***user_input*** with input from the random module.  
+-A ***Main*** function with a ***while*** loop for input value and type validation.  
+-   The input solicited from the users is an ***integer*** between 1 to 9. Floats and strings are not allowed.  
+-   Relevant ***print*** messages warn the user about what input is expected.  
+-The ***Main*** function also inlcudes a ***while*** loop to solicit user response after every input.  
+-   The input solicited from the users is a ***yes*** or ***no***. Floats and integers are not allowed.  
+-   if the user input is"yes", a new random number is generated and game continues.  
+-   if the user input is "no", the games exits and user is displayed a **Goodbye** message
+-The ***Grid*** displays **"H"** for hits, **"X"** for misses and **"L** for the correct ship position.  
+-The game is designed to allow the user to play as long as they wish.  
+
+
 
 
 ## Existing Features
@@ -86,4 +102,4 @@ Happy coding!
 -The icons in the footer and header were taken from Font Awesome.
 
 ### Media
--The photo used for Favicon is from the author's own cat
+-No media was used for this project.
