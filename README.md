@@ -134,8 +134,30 @@ The choice of this game for this project is to present the ***user*** with a gam
 
 ![add,commit,push](readme.doc/add_commit_push_github.png)
 
+## Heroku 
 
+-pip3 freeze > requirements.txt output 
 
+![requirements.txt_update](readme.doc/requirements_txt_update.png)
+
+-Heroku Eco Dynos Plan config
+
+![heroku_eco_dynos_plan](readme.doc/heroku_eco_dynos_plan.png)
+
+-Heroku Buildpacks Config- Add python and Nodejs
+
+![heroku_add_buildpacks](readme.doc/heroku_add_buildpacks.png)
+
+-Heroku Github conectivitiy and deployment 
+
+![heroku_authorise](readme.doc/heroku_authorise.png)
+![heroku_auto_deploy_github](readme.doc/heroku_auto_deploy_github.png)
+![heroku_app_github_connected](readme.doc/heroku_app_github_connected.png)
+![heroku_manual_deply](readme.doc/heroku_manual_deploy.png)
+
+-Heroku app deployed 
+
+![heroku_app_deployed](readme.doc/heroku_app_deployed.png)
 
 ## Credits
 -Extra help to understand key python concepts.  
