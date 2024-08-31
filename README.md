@@ -41,9 +41,10 @@ The choice of this game for this project is to present the ***user*** with a gam
 -The project code is written in python 3 inside the code institute IDE.   
 -Github is used to host the repository.  
 -The logic for the entire coding is broken up in multiple parts- ***functions, while-if-else loops*** and ***try except*** methods.
-![mindmanager_gamee_logic](readme.doc/mindmanager_gamee_logic.png)
 
--Import of ***dateline*** module to display the date, month, year and time in UTC.  
+![mindmanager_game_logic](readme.doc/mindmanager_game_logic.png)
+
+-Install pytz package and then Import of ***dateline*** module to display the date, month, year and time in UTC.  
 -Import of  ***random*** module to generate random numbers for the game.  
 
 -A 3x3 grid displays numbers from 1 to 9 . Used for visual representation of the ship location, hits and misses during the game.  
@@ -62,9 +63,10 @@ The choice of this game for this project is to present the ***user*** with a gam
 -The ***Grid*** displays **"H"** for hits, **"X"** for misses and **"L** for the correct ship position.  
 -The game is designed to allow the user to play as long as they wish.  
 
-## Testing Code
 
-## Existing Features
+## Install Pytz package.
+
+![pip_install_pytz](readme.doc/pip_install_pytz.png)
 
 ## Validator Testing
 -Each piece of code and function was tested independently and with other functions using three tools listed below:-  
@@ -91,6 +93,10 @@ The choice of this game for this project is to present the ***user*** with a gam
 ![input_function_pythontuor_visualization](readme.doc/input_fuction_pythontutor_visualization.png)
 ![usser_input_yes_no_test](readme.doc/user_input_yes_no_test.png)
 
+### Odd Quirk issue with the input statement 
+
+![odd_quirk_input_text](readme.doc/odd_quirk_input_text_issue.png)
+
 ## Deployment
 
 ### Deployment from GitHub
@@ -103,23 +109,23 @@ The choice of this game for this project is to present the ***user*** with a gam
 -select_branch_github_deployment
 
 -From the **Actions** tab, select **Deployment** to check deployment status and capture external link.
+![github_page_enable](github_page_enable.png)
+![github_pagebuild_deployment](github_pagebuild_deployment.png)
+![github_pagebuild_sucess](github_pagebuild_sucess.png)
 
 ### Github_page_deployment
 
 -Once the main branch has been selected, the page will automatically refresh to indicate the successful deployment.
 
--The live link can be found here - https://bobrac3023.github.io/Project2-Quiz/
+-The live link can be found here - https://bobrac3023.github.io/roshan-battleship-proj3/
 
-### Deployment from gitpod
--Site deployed from Gitpod using python http server
+### Gitpod after creation from Github Repository using Code-Institute-Org/python-essentials-template
 
-#### python3_http_server
-
--website viewed from Code Institute IDE Enviroment
+![gitpodio_after_creation](readme.doc/gitpodio_after_creation.png)
 
 ### Code_ide_environment
 
-
+![gitpod_code_ide_environment](readme.doc/gitpod_code_ide_environment.png)
 
 ##### git_add_commit_push_command
 
@@ -158,4 +164,5 @@ The choice of this game for this project is to present the ***user*** with a gam
 -validate data type (https://www.youtube.com/watch?v=kLI31o7mDsA).  
 
 ### Media
--No media was used for this project.
+-All immages used in this readme file are placed under the readme.doc file.
+![readme_doc_images](readme.doc/readme_doc_images.png) 
