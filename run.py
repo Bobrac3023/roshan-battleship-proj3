@@ -1,33 +1,38 @@
-# import datetime module from python
+import random
+
 import datetime
+
+# display current date and time
 x = datetime.datetime.now()
-# display current year,month andday.hour,minute,second,and microsecond in UTC
 print(x)
 
-# import random module from python
-import random
-print ( " !!!! Welcome to the Battleship game !!!!")
 
-# Create  list with 10 spaces (index 0 to 9). Index 0 is unused and assign to variable theBoard
-theBoard = [" "] * 10
-# Use "for loop" to fill the board with numbers from 1 to 9 in reverse order with a step of -1
+print( " !!!! Welcome to the Battleship game !!!!")
+
+# Create list with 10 spaces(index 0 to 9),assign to variable the_board
+the_board = [" "] * 10
+
+# fill board with nos from 1 to 9 in reverse order,step of -1
 for i in range(9, 0, -1):
-    theBoard[i] = str(i)
+    the_board[i] = str(i)
 
-""" Function to print 3x3 grid"""
-def print_board(theBoard):
-    print(f"{theBoard[1]} | {theBoard[2]} | {theBoard[3]}")
+
+def print_grid(the_board):
+    """ Function to print 3x3 grid"""
+    print(f"{the_board[1]} | {the_board[2]} | {the_board[3]}")
     print("--+---+--")
-    print(f"{theBoard[4]} | {theBoard[5]} | {theBoard[6]}")
+    print(f"{the_board[4]} | {the_board[5]} | {the_board[6]}")
     print("--+---+--")
-    print(f"{theBoard[7]} | {theBoard[8]} | {theBoard[9]}")
+    print(f"{the_board[7]} | {the_board[8]} | {the_board[9]}")
 
-""" Check if user_input matches random_generator number"""
-def match(random_generator, user_input):
- return random_generator == user_input
 
-""" Main function to run the game """
+def match(random_generator, user_input): 
+    """ Check if user_input matches random_generator number"""
+    return random_generator == user_input
+
+
 def main():
+    """ Main function to run the game """
     # generate random integer values between 1-9
     value = random.randint(1, 9)  
     print("Computer Says - Ship is hidden at position between 1 to 9:")  
@@ -36,24 +41,28 @@ def main():
         # try and except method for input type validation 
         try:
             # add new line character inside text for odd quirk issue
-            codegenerator = int(input("Dear Player: Please enter a number between 1 to 9 to guess the ship position :\n "))
+            code_generator = int(input("Enter number to guess ship's position(1-9) :\n "))
         except ValueError:
-            print("The number must be a numeric value between 1 to 9")
-            continue  
-        if codegenerator < 1 or codegenerator > 9:
+            print("The number must be numeric value between 1 to 9")
+            continue
+ 
+        if code_generator < 1 or code_generator > 9:
             print("The number must be between 1 and 9.")
             continue
-        # Compare result , mark "H" for hit or "X" for miss and "L" for ship location ( in case of a miss) 
-        if match(value, codegenerator):
+
+        # Compare result , mark "H" for hit or "X" for miss and "L"
+        if match(value, code_generator):
             print("You have hit the jackpot! Well done !!!")
-            theBoard[codegenerator] = "H"  # Mark a hit on the board
+            the_board[code_generator] = "H"  # Mark a hit on the board
         else:
             print("OOPS you missed !!!. The ship's location is at L")
-            theBoard[codegenerator] = "X"  # Mark X for a miss on the board
-            theBoard[value]="L" # Mark "L" for the correct position
+            the_board[code_generator] = "X"  # Mark X for a miss on the board
+            the_board[value]="L" # Mark "L" for the correct position
+
         # Print the updated grid
-        print_board(theBoard)
-           # Seek user input to  continue or exit the game
+        print_grid(the_board)
+
+        # Seek user input to  continue or exit the game
         while True:
             # add new line character inside text for odd quirk issue
             user_input = input('Do you wish to continue? yes/no:\n ').strip().lower()
@@ -68,6 +77,8 @@ def main():
             else:
                 print('Please type "yes" or "no".')
 
+
 """ Main function to start the game"""
-main()
+if __name__ == "__main__":
+    main()
 

@@ -127,7 +127,7 @@ The choice of this game for this project is to present the ***user*** with a gam
 
 ![gitpod_code_ide_environment](readme.doc/gitpod_code_ide_environment.png)
 
-##### git_add_commit_push_command
+### git_add_commit_push_command
 
 -use gitpod commands to add, commit code to gitub repository.  
 -gitpod push command to push commited changes to github repository 
@@ -186,5 +186,5 @@ The choice of this game for this project is to present the ***user*** with a gam
 -validate data type (https://www.youtube.com/watch?v=kLI31o7mDsA).  
 
 ### Media
--All immages used in this readme file are placed under the readme.doc file.
+-All images used in this readme file are placed under the readme.doc file.
 ![readme_doc_images](readme.doc/readme_doc_images.png) 
