@@ -33,24 +33,26 @@ Happy coding!
 
 ## Battleship Game - Guess the Ship Location
 
-
 ## Introduction
-
+The battelship game is one of the most popular game used to demonstrate the use of "python" language, its versality and ease of use.
+The choice of this game for this project is to present the ***user*** with a game of logic, where their skills are tested against a machine, in this case a computer. It is a ***single player*** game, wherein the computer generates a random number to mark the ships location. A ***3x3*** grid presents a visual representation for hits, misses, and the ships location. The user is presented with relevant messages for guidance throughout the game. 
 
 ## Features
 -The project code is written in python 3.  
--The logic for the entire coding is broken up in multiple parts.  
+-Github is used to host the repository.  
+-The logic for the entire coding is broken up in multiple parts- ***functions, while-if-else loops*** and ***try except*** methods.  
 -Import of ***dateline*** module to display the date, month, year and time in UTC.  
 -Import of  ***random*** module to generate random numbers for the game.  
 -A 3x3 grid displays numbers from 1 to 9 . Used for visual representation of the ship location, hits and misses during the game.  
 -A ***match***function **checks and matches** the  ***user_input*** with input from the random module.  
--A ***Main*** function with a ***while*** loop for input value and type validation.  
--   The input solicited from the users is an ***integer*** between 1 to 9. Floats and strings are not allowed.  
--   Relevant ***print*** messages warn the user about what input is expected.  
--The ***Main*** function also inlcudes a ***while*** loop to solicit user response after every input.  
--   The input solicited from the users is a ***yes*** or ***no***. Floats and integers are not allowed.  
--   if the user input is"yes", a new random number is generated and game continues.  
--   if the user input is "no", the games exits and user is displayed a **Goodbye** message
+-A ***Main*** function with a ***while*** loop for input value and data type validation.  
+    -The input solicited from the users is an ***integer*** between 1 to 9. Floats and strings are not allowed.  
+    - ***try except*** method is used to handle exceptions.   
+    -Relevant ***print*** messages warn the user about what input is expected.  
+-The ***Main*** function also includes a ***while--if-elif-else*** loop to solicit user response after every input.  
+    -The input solicited from the user is a ***yes*** or ***no***. Floats and integers are not allowed.  
+    -If the user input is"yes", a new random number is generated and game continues.  
+    -If the user input is "no", the games exits and user is displayed a **Goodbye** message.  
 -The ***Grid*** displays **"H"** for hits, **"X"** for misses and **"L** for the correct ship position.  
 -The game is designed to allow the user to play as long as they wish.  
 
@@ -82,24 +84,41 @@ Happy coding!
 
 -website viewed from Code Institute IDE Enviroment
 
-#### website_code_ide_environment
+### Code_ide_environment
 
--use gitpod commands to add, commit code to gitub repository
 
-##### git_add_commit_command
 
+##### git_add_commit_push_command
+
+-use gitpod commands to add, commit code to gitub repository.  
 -gitpod push command to push commited changes to github repository
 
-##### git_push
 
 ## Credits
--Extra help to understand key Javascript scripts (https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37).
--Understand how to design the quiz (https://www.sitepoint.com/simple-javascript-quiz/).
--Understand var and const declarations (https://www.giraffeacademy.com/web-development/javascript/building-a-quiz/).
+-Extra help to understand key python concepts.  
+    https://www.youtube.com/watch?v=KzqSDvzOFNA.  
+    https://www.youtube.com/watch?v=piJc18hcH0Y.  
+    https://www.youtube.com/watch?v=CasqhmeopnU.  
+    https://www.youtube.com/watch?v=8UCIvrs9LZw.  
+    https://www.youtube.com/watch?v=Ej7I8BPw7Gk.  
+    https://www.youtube.com/watch?v=PY9hvAFrxMI.  
+    https://pythonbasics.org/try-except/  
+    https://www.youtube.com/watch?v=TqPzwenhMj0&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3&index=6  
+    https://www.youtube.com/watch?v=4OX49nLNPEE  
+    https://www.youtube.com/watch?v=ON70wvKYops
+    https://www.youtube.com/watch?v=kLI31o7mDsA  
+    https://www.youtube.com/watch?v=zPFZy6wKhVA&list=PL98qAXLA6afuh50qD2MdAj3ofYjZR_Phn&index=34  
+    https://www.youtube.com/watch?v=94UHCEmprCY.  
+
+-Test functions and pieces of code Programmiz.com  (https://www.programiz.com/online-compiler/7oVd1BFsuE3Bd).  
+-Visualize Code execution - pythontutor (https://pythontutor.com/cp/composingprograms.html#mode=edit).  
+
 
 ### Content
--How to design, structure and write code instructions taken from (https://www.youtube.com/watch?v=PBcqGxrr9g8).
--The icons in the footer and header were taken from Font Awesome.
+
+-design the grid (https://www.youtube.com/watch?v=PY9hvAFrxMI).  
+-input validation (https://www.youtube.com/watch?v=ON70wvKYops).  
+-validate data type (https://www.youtube.com/watch?v=kLI31o7mDsA).  
 
 ### Media
 -No media was used for this project.
