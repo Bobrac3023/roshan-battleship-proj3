@@ -47,7 +47,7 @@ def main():
         # try except method for input validation 
         try:
             # add new line character inside text for odd quirk issue
-            code_generator = int(input("Enter number to guess ship's position(1-9) :\n "))
+            code_generator = int(input("Enter number to guess ships position(1-9) :\n "))
         except ValueError:
             print("The number must be numeric value between 1 to 9")
             continue

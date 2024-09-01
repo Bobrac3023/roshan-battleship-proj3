@@ -10,12 +10,13 @@ The choice of this game for this project is to present the ***user*** with a gam
 -Github is used to host the repository.  
 -Heroku the dynamic websites platform is used to host backend language python.  
 -PEP8 style guide was referenced to style the code   
--The logic for the entire coding is broken up in multiple parts- ***functions, while-if-else loops*** and ***try except*** methods.  
+-The logic for the entire code is broken up in multiple parts- ***functions, while-if-else loops*** and ***try except*** methods.  
 -A mindmanger map explains the logic below
 
 ![mindmanager_mindmap_logic_explaination](readme.doc/mindmanager_mindmap_logic_explaination.png)
 
--Install pytz package and then Import of ***dateline*** module to display the date, month, year and time in UTC.  
+-Install pytz package.  
+-Import ***datetime*** and ***timezone*** module to display the ***date,month,year,time and day*** for **Asia/Dubai** timezone.  
 -Import of  ***random*** module to generate random numbers for the game.  
 
 -A **3x3** grid displays numbers from 1 to 9 . Used for visual representation of the ship location, hits and misses during the game.  
@@ -52,17 +53,36 @@ The choice of this game for this project is to present the ***user*** with a gam
 
 ## Features to implement later
 
-- A timer.  
 - Use color packages like **colorama** or **termcolor** to print bold text.  
 - Display images using libraries like **openCV**, **matplotlib**, **pillow** or **tensorflow**.
 
 
-## Install pytz package.
+## Install pytz package and configure timezone
+
+### ptyz package
+- The pytz package was installed to allow import of the timezone module. 
 
 ![pip_install_pytz](readme.doc/pip_install_pytz.png)
 
+### pip3 freeze > requirements.txt output ### 
+- The pip3 freeze > requirements.txt command was used to capture the pytz package dependency for the Heroku app. 
+
+![requirements.txt_update](readme.doc/requirements_txt_update.png)
+
+### datetime and timezone configuration details ###
+
+- The time zone configured for this game is UTC+4 which is Asia/Dubai.  
+- The time is displayed in 12 hour format with AM/PM.  
+- The day of the week is also displayed. 
+
+![timezone_compiler_validation](readme.doc/timezone_compiler_validation_.png)
+
+### Heroku app output for datetime and timezone ###
+
+![heroku_app_datetime_zone_display](readme.doc/heroku_app_datetime_zone_display.png)
+
 ## Testing and code validation
--Each piece of code and function was tested and validated using three tools listed below:-  
+-Code and functions were tested and validated using the three tools listed below:-  
 - **programmiz.com** - an online python compiler  (https://www.programiz.com/online-compiler/7oVd1BFsuE3Bd).  
 - **pythontutor** - Visualize code execution  (https://pythontutor.com/cp/composingprograms.html#mode=edit).  
 - **gitpod IDE environment**  (https://bobrac3023-roshanbattle-cv53bgpnc73.ws-us115.gitpod.io/).  
@@ -155,9 +175,6 @@ The choice of this game for this project is to present the ***user*** with a gam
 
 ## Heroku 
 
-### pip3 freeze > requirements.txt output 
-
-![requirements.txt_update](readme.doc/requirements_txt_update.png)
 
 ### Heroku Eco Dynos Plan config
 
@@ -183,6 +200,7 @@ The choice of this game for this project is to present the ***user*** with a gam
 https://roshan-battleship-proj3-06066cd9a93e.herokuapp.com/
 
 ## Credits
+
 - **Extra help to understand key python concepts.**  
     https://www.youtube.com/watch?v=KzqSDvzOFNA.  
     https://www.youtube.com/watch?v=piJc18hcH0Y.  
@@ -214,7 +232,7 @@ https://roshan-battleship-proj3-06066cd9a93e.herokuapp.com/
 
 
 
-### Content
+### Content creation assistance- reference code
 
 - **design the grid**  
     https://www.youtube.com/watch?v=PY9hvAFrxMI.  
@@ -223,7 +241,15 @@ https://roshan-battleship-proj3-06066cd9a93e.herokuapp.com/
 - **validate data type**  
     https://www.youtube.com/watch?v=kLI31o7mDsA.  
 - **user input**  
-https://bobbyhadz.com/blog/python-input-boolean  
+    https://bobbyhadz.com/blog/python-input-boolean  
+- **pytz install and configure timezone**  
+    https://www.geeksforgeeks.org/python-pip/  
+    https://strftime.org/  
+    https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes  
+    https://mljar.com/blog/list-pytz-timezones/
+
+
+
 
 ### Media
 -All images used in this readme file are placed under the readme.doc file.
