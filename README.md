@@ -1,35 +1,3 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome,
-
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
-
-## Reminders
-
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
 
 ## Battleship Game - Guess the Ship Location
 
@@ -40,60 +8,96 @@ The choice of this game for this project is to present the ***user*** with a gam
 ## Features
 -The project code is written in python 3 inside the code institute IDE.   
 -Github is used to host the repository.  
--The logic for the entire coding is broken up in multiple parts- ***functions, while-if-else loops*** and ***try except*** methods.
+-Heroku the dynamic websites platform is used to host backend language python.  
+-PEP8 style guide was referenced to style the code   
+-The logic for the entire coding is broken up in multiple parts- ***functions, while-if-else loops*** and ***try except*** methods.  
+-A mindmanger map explains the logic below
 
-![mindmanager_game_logic](readme.doc/mindmanager_game_logic.png)
+![mindmanager_mindmap_logic_explaination](readme.doc/mindmanager_mindmap_logic_explaination.png)
 
 -Install pytz package and then Import of ***dateline*** module to display the date, month, year and time in UTC.  
 -Import of  ***random*** module to generate random numbers for the game.  
 
--A 3x3 grid displays numbers from 1 to 9 . Used for visual representation of the ship location, hits and misses during the game.  
+-A **3x3** grid displays numbers from 1 to 9 . Used for visual representation of the ship location, hits and misses during the game.  
 -A ***match*** function **checks and matches** the  ***user_input*** with input from the ***random module***.  
 
--A ***Main*** function ***FIRST*** checks for input value and data type validation  with a ***while--if-else*** loop .  
+-A ***Main*** function **first** checks for input value and data type validation  with a ***while--if-else*** loop .  
 - The input solicited from the users is an ***integer*** between 1 to 9. ***Floats and strings*** are not allowed.  
 - ***try except*** method is used to handle exceptions.  
 - Relevant ***print*** messages warn the user about what input is expected.  
 
--The Second part of the ***Main*** function has a ***while--if-elif-else*** loop to solicit user response after every input.  
+-The **second** part of the ***Main*** function has a ***while--if-elif-else*** loop to solicit user response to continue or exit.  
 - The input solicited from the user is a ***yes*** or ***no***. ***Floats and integers*** are not allowed.  
-- If the user input is"yes", a new random number is generated and game continues.  
+- ***strip*** function used to remove leading and trailing whitespaces.  
+- ***lower*** function used to return string in lower case.   
+- If the user input is"yes", a ***new random number*** is generated and game continues.  
 - If the user input is "no", the games exits and user is displayed a **Goodbye** message.   
 
 -The ***Grid*** displays **"H"** for hits, **"X"** for misses and **"L** for the correct ship position.  
 -The game is designed to allow the user to play as long as they wish.  
 
+## Features to implement later
 
-## Install Pytz package.
+- A timer.  
+- Use color packages like **colorama** or **termcolor** to print bold text.  
+- Display images using libraries like **openCV**, **matplotlib**, **pillow** or **tensorflow**.
+
+
+## Install pytz package.
 
 ![pip_install_pytz](readme.doc/pip_install_pytz.png)
 
-## Validator Testing
--Each piece of code and function was tested independently and with other functions using three tools listed below:-  
-- Test functions and pieces of code at Programmiz.com  (https://www.programiz.com/online-compiler/7oVd1BFsuE3Bd).  
-- Visualize Code execution - pythontutor (https://pythontutor.com/cp/composingprograms.html#mode=edit).  
-- gitpod IDE environment  (https://bobrac3023-roshanbattle-cv53bgpnc73.ws-us115.gitpod.io/).  
+## Testing and code validation
+-Each piece of code and function was tested and validated using three tools listed below:-  
+- **programmiz.com** - an online python compiler  (https://www.programiz.com/online-compiler/7oVd1BFsuE3Bd).  
+- **pythontutor** - Visualize code execution  (https://pythontutor.com/cp/composingprograms.html#mode=edit).  
+- **gitpod IDE environment**  (https://bobrac3023-roshanbattle-cv53bgpnc73.ws-us115.gitpod.io/).  
 
 
-### Testing and validating print_board function
+### Test,validate and visualize "print_grid" function
 
-![print_board_function_test](readme.doc/print_board_function_output.png)
-![print_board_online_compiler](readme.doc/print_board_online_compiler_test.png)
-![print_board_pythontutor_visualization](readme.doc/print_board_pythontutor_visualization.png)
+- **Online Compiler output** 
 
-### Testing and validating random no generation inside the Main function
+![print_gird_function_compiler_output](readme.doc/print_grid_function_compiler_output.png)
 
-![random_no_function_test](readme.doc/random_no_function_test.png)
+- **pythontutor visualization output** 
+
+![print_grid_function_pythontutor](readme.doc/print_grid_function_pythontutor.png)
+
+### Test,validate and visualize "random no" generation inside the Main function
+
+- **Online compiler output** 
+
+![random_no_function_compiler_output](readme.doc/random_no_function_compiler_output.png)
+
+- **Code insititute IDE output**
+
 ![random_no_gitio_test](readme.doc/random_no_gitio_test.png)
-![random_no_pythontutor_visualization](readme.doc/random_no_pythontutor_visualizaton.png)
 
-### Testing and validating input type and data type inside the Main function
-![input_validation_function](readme.doc/input_validation_function.png)
-![input_type_validation](readme.doc/input_type_validation.png)
-![input_function_pythontuor_visualization](readme.doc/input_fuction_pythontutor_visualization.png)
-![usser_input_yes_no_test](readme.doc/user_input_yes_no_test.png)
+- **pythontutor visualization output** 
 
-### Odd Quirk issue with the input statement 
+![random_no_function_pythontutor](readme.doc/random_no_pythontutor_visualizaton.png)
+
+### Test,validate and visualize "Main" function", for "input validation" and "user choice" validation
+
+- **Online compiler output** 
+
+![main_function_compiler_output](readme.doc/main_function_compiler_output.png)
+
+
+- **Code insititute IDE output**
+
+![main_function_gitio_test](readme.doc/main_function_gitpio_test.png)
+
+- **pythontutor visualization output**
+
+![main_function_pythontutor](readme.doc/main_function_pythontutor.png)
+
+
+### Odd Quirk issue - "input statement"  
+
+- In order to allow the input statement to work corectly in the Heroku mock terminal, code institute requires the additon of **/n** line character at the end of the text.  
+- Without this extra character the text for the **input request** will not show in the terminal.
 
 ![odd_quirk_input_text](readme.doc/odd_quirk_input_text_issue.png)
 
@@ -109,6 +113,7 @@ The choice of this game for this project is to present the ***user*** with a gam
 -select_branch_github_deployment
 
 -From the **Actions** tab, select **Deployment** to check deployment status and capture external link.
+
 ![github_page_enable](github_page_enable.png)
 ![github_pagebuild_deployment](github_pagebuild_deployment.png)
 ![github_pagebuild_sucess](github_pagebuild_sucess.png)
@@ -136,31 +141,35 @@ The choice of this game for this project is to present the ***user*** with a gam
 
 ## Heroku 
 
--pip3 freeze > requirements.txt output 
+### pip3 freeze > requirements.txt output 
 
 ![requirements.txt_update](readme.doc/requirements_txt_update.png)
 
--Heroku Eco Dynos Plan config
+### Heroku Eco Dynos Plan config
 
 ![heroku_eco_dynos_plan](readme.doc/heroku_eco_dynos_plan.png)
 
--Heroku Buildpacks Config- Add python and Nodejs
+### Heroku Buildpacks Config- Add python and Nodejs
 
 ![heroku_add_buildpacks](readme.doc/heroku_add_buildpacks.png)
 
--Heroku Github conectivitiy and deployment 
+### Heroku Github conectivitiy and deployment 
 
 ![heroku_authorise](readme.doc/heroku_authorise.png)
 ![heroku_auto_deploy_github](readme.doc/heroku_auto_deploy_github.png)
 ![heroku_app_github_connected](readme.doc/heroku_app_github_connected.png)
 ![heroku_manual_deply](readme.doc/heroku_manual_deploy.png)
 
--Heroku app deployed 
+### Heroku app deployed 
 
 ![heroku_app_deployed](readme.doc/heroku_app_deployed.png)
 
+### Heroku app program link
+
+https://roshan-battleship-proj3-06066cd9a93e.herokuapp.com/
+
 ## Credits
--Extra help to understand key python concepts.  
+- **Extra help to understand key python concepts.**  
     https://www.youtube.com/watch?v=KzqSDvzOFNA.  
     https://www.youtube.com/watch?v=piJc18hcH0Y.  
     https://www.youtube.com/watch?v=CasqhmeopnU.  
@@ -174,17 +183,35 @@ The choice of this game for this project is to present the ***user*** with a gam
     https://www.youtube.com/watch?v=kLI31o7mDsA  
     https://www.youtube.com/watch?v=zPFZy6wKhVA&list=PL98qAXLA6afuh50qD2MdAj3ofYjZR_Phn&index=34  
     https://www.youtube.com/watch?v=94UHCEmprCY.  
+    https://www.w3schools.com/python/ref_string_lower.asp.  
+    https://www.w3schools.com/python/ref_string_strip.asp  
+    https://www.geeksforgeeks.org/python-comments/
 
--Test functions and pieces of code Programmiz.com  (https://www.programiz.com/online-compiler/7oVd1BFsuE3Bd).  
--Visualize Code execution - pythontutor (https://pythontutor.com/cp/composingprograms.html#mode=edit).  
+
+- **Programmiz.com**- An online compiler to test functions and pieces of code   
+    https://www.programiz.com/online-compiler/7oVd1BFsuE3Bd.  
+
+- **Visualize Code execution** - pythontutor.  
+    https://pythontutor.com/cp/composingprograms.html#mode=edit.  
+
+- **PEP8 style guide**  
+    https://pep8.org/  
+    https://realpython.com/python-pep8/
+
 
 
 ### Content
 
--design the grid (https://www.youtube.com/watch?v=PY9hvAFrxMI).  
--input validation (https://www.youtube.com/watch?v=ON70wvKYops).  
--validate data type (https://www.youtube.com/watch?v=kLI31o7mDsA).  
+- **design the grid**  
+    https://www.youtube.com/watch?v=PY9hvAFrxMI.  
+- **input validation**  
+    https://www.youtube.com/watch?v=ON70wvKYops.  
+- **validate data type**  
+    https://www.youtube.com/watch?v=kLI31o7mDsA.  
+- **user input**  
+https://bobbyhadz.com/blog/python-input-boolean  
 
 ### Media
 -All images used in this readme file are placed under the readme.doc file.
-![readme_doc_images](readme.doc/readme_doc_images.png) 
+
+![readme_doc_images](readme.doc/readme_doc.png)

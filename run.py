@@ -38,7 +38,7 @@ def main():
     print("Computer Says - Ship is hidden at position between 1 to 9:")  
     
     while True:
-        # try and except method for input type validation 
+        # try except method for input validation 
         try:
             # add new line character inside text for odd quirk issue
             code_generator = int(input("Enter number to guess ship's position(1-9) :\n "))
@@ -50,7 +50,7 @@ def main():
             print("The number must be between 1 and 9.")
             continue
 
-        # Compare result , mark "H" for hit or "X" for miss and "L"
+        # Compare result , mark "H" or "X" and "L"
         if match(value, code_generator):
             print("You have hit the jackpot! Well done !!!")
             the_board[code_generator] = "H"  # Mark a hit on the board
@@ -59,7 +59,7 @@ def main():
             the_board[code_generator] = "X"  # Mark X for a miss on the board
             the_board[value]="L" # Mark "L" for the correct position
 
-        # Print the updated grid
+        # Print updated grid
         print_grid(the_board)
 
         # Seek user input to  continue or exit the game
