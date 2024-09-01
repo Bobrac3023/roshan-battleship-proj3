@@ -36,6 +36,20 @@ The choice of this game for this project is to present the ***user*** with a gam
 -The ***Grid*** displays **"H"** for hits, **"X"** for misses and **"L** for the correct ship position.  
 -The game is designed to allow the user to play as long as they wish.  
 
+## Links to Github, Gitpod and Heroku
+
+- External Link  
+  https://bobrac3023.github.io/roshan-battleship-proj3/
+
+- Heroku app Program link  
+  https://roshan-battleship-proj3-06066cd9a93e.herokuapp.com/
+
+- Link to Github repository.  
+  https://github.com/Bobrac3023/roshan-battleship-proj3
+
+- Link to Gitpod workspace.  
+  https://bobrac3023-roshanbattle-cv53bgpnc73.ws-us115.gitpod.io/
+
 ## Features to implement later
 
 - A timer.  

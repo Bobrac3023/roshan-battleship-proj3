@@ -2,9 +2,15 @@ import random
 
 import datetime
 
+from pytz import timezone
+
 # display current date and time
 x = datetime.datetime.now()
-print(x)
+format = "%m-%d-%Y %A %H:%M %p %z"
+
+# Convert to Asia/Dubai time zone
+native = x.astimezone(timezone('Asia/Dubai'))
+print(native.strftime(format))
 
 
 print( " !!!! Welcome to the Battleship game !!!!")
