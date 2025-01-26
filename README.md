@@ -83,57 +83,74 @@ The choice of this game for this project is to present the ***user*** with a gam
 - The time is displayed in 12 hour format with AM/PM.  
 - The day of the week is also displayed. 
 
-![timezone_compiler_validation](readme.doc/timezone_compiler_validation_.png)
+![date_time_programiz](readme.doc/date_time_programiz.png)
 
-### Heroku app output for datetime and timezone ###
+### Heroku app output - initialize screen - display datetime and timezone ###
 
-![heroku_app_datetime_zone_display](readme.doc/heroku_app_datetime_zone_display.png)
+![heroku_app_deployment_0125](readme.doc/heroku_app_deployment_0125.png)
 
-## Testing and code validation
--Code and functions were tested and validated using the three tools listed below:-  
-- **programmiz.com** - an online python compiler  (https://www.programiz.com/online-compiler/7oVd1BFsuE3Bd).  
-- **pythontutor** - Visualize code execution  (https://pythontutor.com/cp/composingprograms.html#mode=edit).  
-- **gitpod IDE environment**  (https://bobrac3023-roshanbattle-cv53bgpnc73.ws-us115.gitpod.io/).  
+## Code validation
+-Code was validated using code institute PEP8 linter  
+- **code validation** pep8 from Code Institute https://pep8ci.herokuapp.com/# 
+
+### Code Institute PEP8 Linter test output
+![pep8ci_linter_output_0](readme.doc/pep8ci_linter_output_0.png)
+![pep8ci_linter_output](readme.doc/pep8ci_linter_output.png)
+
+## Code Testing 
+
+-Code functions were tested and validated using the below tools.:-  
+
+- **programmiz.com** - an online python compiler  https://www.programiz.com/online-compiler/7oVd1BFsuE3Bd.  
+- **pythontutor** - Visualize code execution  https://pythontutor.com/cp/composingprograms.html#mode=edit.  
+- **gitpod IDE environment**  https://bobrac3023-roshanbattle-cv53bgpnc73.ws-us115.gitpod.io/.  
 
 
-### Test,validate and visualize "print_grid" function
+### Test,validate and visualize "play_game" function
 
-- **Online Compiler output** 
+**User is asked to guess a number** 
 
-![print_gird_function_compiler_output](readme.doc/print_grid_function_compiler_output.png)
+![user_input_guess_ship_1](readme.doc/user_input_guess_ship_1.png)
+
+**user choose to continue- input from user to prompt is "YES"** 
+
+![user_choose_continue](readme.doc/user_choose_continue.png)
+
+**user input validation and data type validation**
+![input_type_and_data_type_validation](readme.doc/input_type_and_data_type_validation.png)
+
+### Test,validate and visualize "continue_game" function
+
+**user inputs YES- game continues** 
+
+![continue_game_yes](readme.doc/continue_game_yes.png)
+
+**user inputs NO- game terminates**
+
+![continue_game_no](readme.doc/continue_game_no.png)
+
+**user input validation**
+
+![]()
 
 - **pythontutor visualization output** 
 
-![print_grid_function_pythontutor](readme.doc/print_grid_function_pythontutor.png)
-
-### Test,validate and visualize "random no" generation inside the Main function
-
-- **Online compiler output** 
-
-![random_no_function_compiler_output](readme.doc/random_no_function_compiler_output.png)
-
-- **Code insititute IDE output**
-
-![random_no_gitio_test](readme.doc/random_no_gitio_test.png)
-
-- **pythontutor visualization output** 
-
-![random_no_function_pythontutor](readme.doc/random_no_pythontutor_visualizaton.png)
+![]()
 
 ### Test,validate and visualize "Main" function", for "input validation" and "user choice" validation
 
 - **Online compiler output** 
 
-![main_function_compiler_output](readme.doc/main_function_compiler_output.png)
+![]()
 
 
 - **Code insititute IDE output**
 
-![main_function_gitio_test](readme.doc/main_function_gitpio_test.png)
+![]()
 
 - **pythontutor visualization output**
 
-![main_function_pythontutor](readme.doc/main_function_pythontutor.png)
+![]()
 
 
 ### Odd Quirk issue - "input statement"  
