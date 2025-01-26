@@ -100,7 +100,7 @@ def main():
     play_game()
 
 
-""" function to start the game"""
+""" function to initialize the game"""
 
 
 main()

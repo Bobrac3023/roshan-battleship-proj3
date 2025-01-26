@@ -5,37 +5,39 @@
 The battelship game is one of the most popular game used to demonstrate the use of "python" language, its versality and ease of use.
 The choice of this game for this project is to present the ***user*** with a game of logic, where their skills are tested against a machine, in this case a computer. It is a ***single player*** game, wherein the computer generates a random number to mark the ships location. A ***3x3*** grid presents a visual representation for hits, misses, and the ships location. The user is presented with relevant messages for guidance throughout the game. 
 
-## Features
--The project code is written in python 3 inside the code institute IDE.   
--Github is used to host the repository.  
--Heroku the dynamic websites platform is used to host backend language python.  
--PEP8 style guide was referenced to style the code   
--The logic for the entire code is broken up in multiple parts- ***functions, while-if-else loops*** and ***try except*** methods.  
--A mindmanger map explains the logic below
+
+## Features 
+- The project code is written in python 3 inside the code institute IDE.
+- Github is used to host the repository.
+- Heroku the dynamic websites platform is used to host backend language python.
+- **pep8ci** linter from code institute is used to check the code for PEP8 styling. https://pep8ci.herokuapp.com/# 
+- The logic for the entire code is broken up in multiple parts- **functions, while-if-else loops** and **try except** block.
+- Install **pytz package** that brings the Olson tz database into Python and thus supports almost all time zones
+- Import **datetime** and **timezone** module to display the **date,month,year,time and day** for **Asia/Dubai** timezone.
+- Import of  **random** module to generate random numbers for the game.
+- A **print_grid** function to print the **3x3** grid and display numbers from 1 to 9.This grid is used for visual representation of the ship 
+  location, hits and misses during the game.
+- A **match** function **checks and matches** the  **user_input** with input from the **random module**.
+- A **play_game** function used to play the game.This function checks if user_input matches the value of the **code_generator**.
+    - Based on the outcome it marks the board with an **X** for a miss, **H** for a hit and **L** for the correct position,with relevant messages 
+      displayed on the screen.
+    - **Input validation** and **data type validation** is used when seeking user input for the ship's location.
+    - A **try and catch block** is used to capture **valueError**exceptions for correct data type validation.
+    - **strip** function used to remove leading and trailing whitespaces.
+    - **lower** function used to return string in lower case.
+    - The input solicited from the users is an **integer** between **1 to 9**.
+    - **Floats and strings** are not allowed.
+    - Relevant **print** messages warn the user about what input is expected.
+- A **continue_game** function seeks user input to continue with the game or exit.
+    - The input solicited from the user is a **yes*** or **no**. 
+    - **strip** function used to remove leading and trailing whitespaces.
+    - **lower** function used to return string in lower case.
+- A **main** function is used to initialise the game.
+
+- A mindmanger map explains the logic below.
 
 ![mindmanager_mindmap_logic_explaination](readme.doc/mindmanager_mindmap_logic_explaination.png)
 
--Install pytz package.  
--Import ***datetime*** and ***timezone*** module to display the ***date,month,year,time and day*** for **Asia/Dubai** timezone.  
--Import of  ***random*** module to generate random numbers for the game.  
-
--A **3x3** grid displays numbers from 1 to 9 . Used for visual representation of the ship location, hits and misses during the game.  
--A ***match*** function **checks and matches** the  ***user_input*** with input from the ***random module***.  
-
--A ***Main*** function **first** checks for input value and data type validation  with a ***while--if-else*** loop .  
-- The input solicited from the users is an ***integer*** between 1 to 9. ***Floats and strings*** are not allowed.  
-- ***try except*** method is used to handle exceptions.  
-- Relevant ***print*** messages warn the user about what input is expected.  
-
--The **second** part of the ***Main*** function has a ***while--if-elif-else*** loop to solicit user response to continue or exit.  
-- The input solicited from the user is a ***yes*** or ***no***. ***Floats and integers*** are not allowed.  
-- ***strip*** function used to remove leading and trailing whitespaces.  
-- ***lower*** function used to return string in lower case.   
-- If the user input is"yes", a ***new random number*** is generated and game continues.  
-- If the user input is "no", the games exits and user is displayed a **Goodbye** message.   
-
--The ***Grid*** displays **"H"** for hits, **"X"** for misses and **"L** for the correct ship position.  
--The game is designed to allow the user to play as long as they wish.  
 
 ## Links to Github, Gitpod and Heroku
 
