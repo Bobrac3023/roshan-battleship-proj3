@@ -32,7 +32,13 @@ The choice of this game for this project is to present the ***user*** with a gam
     - The input solicited from the user is a **yes*** or **no**. 
     - **strip** function used to remove leading and trailing whitespaces.
     - **lower** function used to return string in lower case.
+    - The **while len** method is used to check if the **user_input** is **greater** than **2**.
+    - However, if the user inputs an **integer greater than 2** then game exits
 - A **main** function is used to initialise the game.
+    - The main function inlcudes the **print_board** function
+    - The code then moves on to generate the **random number** between **1 and 9**
+    - The **play_game** function is then initialised to start the game
+    - The **continue_game** fuction is called from within the **play_game** function  
 
 - A mindmanger map explains the logic below.
 

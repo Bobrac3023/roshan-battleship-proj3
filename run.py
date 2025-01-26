@@ -75,6 +75,11 @@ def continue_game():
     while True:
         # add new line character inside text for odd quirk issue
         user_input = input('Do you wish to continue?yes/no:\n').strip().lower()
+        # input validation check
+        while len(user_input) < 2:
+            print("the value must be yes or no")
+            user_input = input('Wish to continue?yes/no:\n').strip().lower()
+            continue
         if user_input == 'yes':
             print('You chose to continue.')
             play_game()
@@ -104,3 +109,4 @@ def main():
 
 
 main()
+
