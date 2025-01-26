@@ -129,19 +129,9 @@ The choice of this game for this project is to present the ***user*** with a gam
 
 ![continue_game_no](readme.doc/continue_game_no.png)
 
-**user input validation**
+**user input validation- Remember we are not testing for data type validation**
 
-![]()
-
-- **pythontutor visualization output** 
-
-![]()
-
-### Test,validate and visualize "Main" function", for "input validation" and "user choice" validation
-
-- **Online compiler output** 
-
-![]()
+![continue_play_input_validation](readme.doc/continue_play_input_validation.png)
 
 
 - **Code insititute IDE output**
