@@ -84,9 +84,9 @@ def continue_game():
             print_grid(the_board)
             print('Sorry to see you stop. Goodbye!')
             break  # Exit the loop and end the game
-            return
         else:
             print("Invalid input. Please enter 'yes' or 'no' only.")
+        return
 
 
 """Main function of the game"""
