@@ -12,11 +12,11 @@ The choice of this game for this project is to present the ***user*** with a gam
 - Heroku the dynamic websites platform is used to host backend language python.
 - **pep8ci** linter from code institute is used to check the code for PEP8 styling. https://pep8ci.herokuapp.com/# 
 - The logic for the entire code is broken up in multiple parts- **functions, while-if-else loops** and **try except** block.
-- Install **pytz package** that brings the Olson tz database into Python and thus supports almost all time zones
+- **pytz package** that brings the Olson tz database into Python and thus supports almost all time zones
 - Import **datetime** and **timezone** module to display the **date,month,year,time and day** for **Asia/Dubai** timezone.
 - Import of  **random** module to generate random numbers for the game.
-- A **print_grid** function to print the **3x3** grid and display numbers from 1 to 9.This grid is used for visual representation of the ship 
-  location, hits and misses during the game.
+- A **print_grid** function to print the **3x3** grid and display numbers from **1 to 9**.This grid is used for visual 
+  representation of the ship location, hits and misses during the game.
 - A **match** function **checks and matches** the  **user_input** with input from the **random module**.
 - A **play_game** function used to play the game.This function checks if user_input matches the value of the **code_generator**.
     - Based on the outcome it marks the board with an **X** for a miss, **H** for a hit and **L** for the correct position,with relevant messages 
@@ -33,9 +33,9 @@ The choice of this game for this project is to present the ***user*** with a gam
     - **strip** function used to remove leading and trailing whitespaces.
     - **lower** function used to return string in lower case.
     - The **while len** method is used to check if the **user_input** is **greater** than **2**.
-    - However, if the user inputs an **integer greater than 2** then game exits
+    - However, if the user inputs an **integer** or **string** greater than **2** then game exits
 - A **main** function is used to initialise the game.
-    - The main function inlcudes the **print_board** function
+    - The main function includes the **print_board** function
     - The code then moves on to generate the **random number** between **1 and 9**
     - The **play_game** function is then initialised to start the game
     - The **continue_game** fuction is called from within the **play_game** function  
@@ -80,7 +80,7 @@ The choice of this game for this project is to present the ***user*** with a gam
 ### datetime and timezone configuration details ###
 
 - The time zone configured for this game is UTC+4 which is Asia/Dubai.  
-- The time is displayed in 12 hour format with AM/PM.  
+- The time is displayed in with AM/PM.  
 - The day of the week is also displayed. 
 
 ![date_time_programiz](readme.doc/date_time_programiz.png)
@@ -90,7 +90,7 @@ The choice of this game for this project is to present the ***user*** with a gam
 ![heroku_app_deployment_0125](readme.doc/heroku_app_deployment_0125.png)
 
 ## Code validation
--Code was validated using code institute PEP8 linter  
+- Code was validated using code institute PEP8 linter  
 - **code validation** pep8 from Code Institute https://pep8ci.herokuapp.com/# 
 
 ### Code Institute PEP8 Linter test output
@@ -99,7 +99,7 @@ The choice of this game for this project is to present the ***user*** with a gam
 
 ## Code Testing 
 
--Code functions were tested and validated using the below tools.:-  
+- Code functions were tested and validated using the below tools.:-  
 
 - **programmiz.com** - an online python compiler  https://www.programiz.com/online-compiler/7oVd1BFsuE3Bd.  
 - **pythontutor** - Visualize code execution  https://pythontutor.com/cp/composingprograms.html#mode=edit.  
@@ -134,16 +134,22 @@ The choice of this game for this project is to present the ***user*** with a gam
 ![continue_play_input_validation](readme.doc/continue_play_input_validation.png)
 
 
-- **Code insititute IDE output**
+**user input - strip and lower functions**
 
-![]()
+![continue_game_lower_strip](readme.doc/continue_game_lower_strip.png)
 
-- **pythontutor visualization output**
+## python tutor visualization output
 
-![]()
+- python tutor visualization of the **print_grid** function that prints **the_board**
+
+![print_grid_function_visualization](readme.doc/print_grid_function_visualization.png)
+
+- python tutor visualization of the **main** function.
+
+![python_tutor_main_function_visualization](readme.doc/python_tutor_main_function_visualization.png)
 
 
-### Odd Quirk issue - "input statement"  
+## Odd Quirk issue - "input statement"  
 
 - In order to allow the input statement to work corectly in the Heroku mock terminal, code institute requires the additon of **/n** line character at the end of the text.  
 - Without this extra character the text for the **input request** will not show in the terminal.
@@ -153,15 +159,15 @@ The choice of this game for this project is to present the ***user*** with a gam
 ## Deployment
 
 ### Deployment from GitHub
--The site was deployed to GitHub pages as below.  
--In the GitHub repository,
+- The site was deployed to GitHub pages as below.  
+- In the GitHub repository,
 -   Navigate to the Settings tab,
 -   Select pages
 -   Under **Branch** dropdown, change to **Main** hub from **none**.
 
--select_branch_github_deployment
+- select_branch_github_deployment
 
--From the **Actions** tab, select **Deployment** to check deployment status and capture external link.
+- From the **Actions** tab, select **Deployment** to check deployment status and capture external link.
 
 ![github_page_enable](github_page_enable.png)
 ![github_pagebuild_deployment](github_pagebuild_deployment.png)
@@ -169,9 +175,9 @@ The choice of this game for this project is to present the ***user*** with a gam
 
 ### Github_page_deployment
 
--Once the main branch has been selected, the page will automatically refresh to indicate the successful deployment.
+- Once the main branch has been selected, the page will automatically refresh to indicate the successful deployment.
 
--The live link can be found here - https://bobrac3023.github.io/roshan-battleship-proj3/
+- The live link can be found here - https://bobrac3023.github.io/roshan-battleship-proj3/
 
 ### Gitpod after creation from Github Repository using Code-Institute-Org/python-essentials-template
 
@@ -183,8 +189,8 @@ The choice of this game for this project is to present the ***user*** with a gam
 
 ### git_add_commit_push_command
 
--use gitpod commands to add, commit code to gitub repository.  
--gitpod push command to push commited changes to github repository 
+- use gitpod commands to add, commit code to gitub repository.  
+- gitpod push command to push commited changes to github repository 
 
 ![add,commit,push](readme.doc/add_commit_push_github.png)
 
@@ -267,6 +273,6 @@ https://roshan-battleship-proj3-06066cd9a93e.herokuapp.com/
 
 
 ### Media
--All images used in this readme file are placed under the readme.doc file.
+- All images used in this readme file are placed under the readme.doc file.
 
-![readme_doc_images](readme.doc/readme_doc.png)
+![readme_doc](readme.doc/readme_doc.png)
