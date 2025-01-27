@@ -3,7 +3,7 @@
 
 ## Introduction
 The battelship game is one of the most popular game used to demonstrate the use of "python" language, its versality and ease of use.
-The choice of this game for this project is to present the ***user*** with a game of logic, where their skills are tested against a machine, in this case a computer. It is a ***single player*** game, wherein the computer generates a random number to mark the ships location. A ***3x3*** grid presents a visual representation for hits, misses, and the ships location. The user is presented with relevant messages for guidance throughout the game. 
+The choice of this game for this project is to present the **user** with a game of logic, where their skills are tested against a machine, in this case a computer. It is a **single player** game, wherein the computer generates a random number to mark the ships location. A **3x3** grid presents a visual representation for hits, misses, and the ships location. The user is presented with relevant messages for guidance throughout the game. 
 
 
 ## Features 
@@ -12,24 +12,24 @@ The choice of this game for this project is to present the ***user*** with a gam
 - Heroku the dynamic websites platform is used to host backend language python.
 - **pep8ci** linter from code institute is used to check the code for PEP8 styling. https://pep8ci.herokuapp.com/# 
 - The logic for the entire code is broken up in multiple parts- **functions, while-if-else loops** and **try except** block.
-- **pytz package** that brings the Olson tz database into Python and thus supports almost all time zones
-- Import **datetime** and **timezone** module to display the **date,month,year,time and day** for **Asia/Dubai** timezone.
-- Import of  **random** module to generate random numbers for the game.
-- A **print_grid** function to print the **3x3** grid and display numbers from **1 to 9**.This grid is used for visual 
+- **pytz package** is installed ,that brings the Olson tz database into Python and thus supports almost all time zones
+- **datetime** and **timezone** modules are imported to display the **date,month,year,time and day** for **Asia/Dubai** timezone.
+- **random** module is imported to generate random numbers for the game.
+- A **print_grid** function prints the **3x3** grid and displays numbers from **1 to 9**.This grid is used for visual 
   representation of the ship location, hits and misses during the game.
 - A **match** function **checks and matches** the  **user_input** with input from the **random module**.
 - A **play_game** function used to play the game.This function checks if user_input matches the value of the **code_generator**.
     - Based on the outcome it marks the board with an **X** for a miss, **H** for a hit and **L** for the correct position,with relevant messages 
       displayed on the screen.
     - **Input validation** and **data type validation** is used when seeking user input for the ship's location.
-    - A **try and catch block** is used to capture **valueError**exceptions for correct data type validation.
+    - A **try and catch block** is used to capture **valueError** exceptions for correct data type validation.
     - **strip** function used to remove leading and trailing whitespaces.
     - **lower** function used to return string in lower case.
     - The input solicited from the users is an **integer** between **1 to 9**.
     - **Floats and strings** are not allowed.
     - Relevant **print** messages warn the user about what input is expected.
 - A **continue_game** function seeks user input to continue with the game or exit.
-    - The input solicited from the user is a **yes*** or **no**. 
+    - The input solicited from the user is a **yes** or **no**. 
     - **strip** function used to remove leading and trailing whitespaces.
     - **lower** function used to return string in lower case.
     - The **while len** method is used to check if the **user_input** is **greater** than **2**.
@@ -45,10 +45,8 @@ The choice of this game for this project is to present the ***user*** with a gam
 ![mindmanager_mindmap_logic_explaination](readme.doc/mindmanager_mindmap_logic_explaination.png)
 
 
-## Links to Github, Gitpod and Heroku
+## Links to Github and Heroku
 
-- External Link  
-  https://bobrac3023.github.io/roshan-battleship-proj3/
 
 - Heroku app Program link  
   https://roshan-battleship-proj3-06066cd9a93e.herokuapp.com/
@@ -56,16 +54,17 @@ The choice of this game for this project is to present the ***user*** with a gam
 - Link to Github repository.  
   https://github.com/Bobrac3023/roshan-battleship-proj3
 
-- Link to Gitpod workspace.  
-  https://bobrac3023-roshanbattle-cv53bgpnc73.ws-us115.gitpod.io/
 
 ## Features to implement later
 
 - Use color packages like **colorama** or **termcolor** to print bold text.  
 - Display images using libraries like **openCV**, **matplotlib**, **pillow** or **tensorflow**.
-- when the user hits the jackpot, it is assumed that the user will exit the game.The logic if user chooses to continue 
-  the game would provide the user with a board where the ship's location is marked with a **H**.
-![play_game_user_hits_jackpot](readme.doc/play_game_user_hits_jackpot.png)  
+
+## Issues encountered in games logic.
+- when the user hits the jackpot, it is assumed that the user will exit the game. If user chooses to continue 
+  the game, the logic should provide the user with a fresh board without the ship's location marked with a **H**.
+- Screenshot highllights the issue.
+![play_game_user_hits_jackpot](readme.doc/play_game_user_hits_jackpot.png) 
 
 
 ## Install pytz package and configure timezone
@@ -93,8 +92,8 @@ The choice of this game for this project is to present the ***user*** with a gam
 ![heroku_app_deployment_0125](readme.doc/heroku_app_deployment_0125.png)
 
 ## Code validation
-- Code was validated using code institute PEP8 linter  
-- **code validation** pep8 from Code Institute https://pep8ci.herokuapp.com/# 
+- Code was validated using code institute PEP8 linter  https://pep8ci.herokuapp.com/# 
+
 
 ### Code Institute PEP8 Linter test output
 ![pep8ci_linter_output_0](readme.doc/pep8ci_linter_output_0.png)
@@ -134,10 +133,10 @@ The choice of this game for this project is to present the ***user*** with a gam
 
 ![continue_game_no](readme.doc/continue_game_no.png)
 
-**user input validation- Remember we are not testing for data type validation**
+**user input and data type validation**
 
-- The **while len** method is used to check if the **user_input** is **greater** than **2**.
-- However, if the user inputs an **integer** or **string** greater than **2** then game exits
+- The user is prompted to input **yes** or **no**
+- **user_input** is checked for **input validation** and **data type validation**
 
 ![continue_play_input_validation](readme.doc/continue_play_input_validation.png)
 
@@ -188,8 +187,6 @@ The choice of this game for this project is to present the ***user*** with a gam
 
 - Once the main branch has been selected, the page will automatically refresh to indicate the successful deployment.
 
-- The live link can be found here - https://bobrac3023.github.io/roshan-battleship-proj3/
-
 ### Gitpod after creation from Github Repository using Code-Institute-Org/python-essentials-template
 
 ![gitpodio_after_creation](readme.doc/gitpodio_after_creation.png)
@@ -206,7 +203,6 @@ The choice of this game for this project is to present the ***user*** with a gam
 ![add,commit,push](readme.doc/add_commit_push_github.png)
 
 ## Heroku 
-
 
 ### Heroku Eco Dynos Plan config
 
@@ -261,10 +257,9 @@ https://roshan-battleship-proj3-06066cd9a93e.herokuapp.com/
 - **PEP8 style guide**  
     https://pep8.org/  
     https://realpython.com/python-pep8/
-
-
-
-### Content creation assistance- reference code
+    https://pep8ci.herokuapp.com/#
+  
+## Content creation assistance- reference code
 
 - **design the grid**  
     https://www.youtube.com/watch?v=PY9hvAFrxMI.  
@@ -281,9 +276,7 @@ https://roshan-battleship-proj3-06066cd9a93e.herokuapp.com/
     https://mljar.com/blog/list-pytz-timezones/
 
 
-
-
-### Media
+## Media
 - All images used in this readme file are placed under the readme.doc file.
 
 ![readme_doc](readme.doc/readme_doc.png)

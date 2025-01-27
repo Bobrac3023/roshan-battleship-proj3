@@ -73,24 +73,20 @@ def play_game():
 def continue_game():
     while True:
         # add new line character inside text for odd quirk issue
-        user_input = input('Do you wish to continue?yes/no:\n').strip().lower()
-        # input validation check
-        while len(user_input) < 2:
-            print("the value must be yes or no")
-            user_input = input('Wish to continue?yes/no:\n').strip().lower()
-            continue
+        user_input = input('Wish to continue?yes/no:\n').strip().lower()
+        # input type and data type validation check
         if user_input == 'yes':
             print('You chose to continue.')
             play_game()
-
-        else:
-            user_input == 'no'
-            print('The correct position of ship is marked with L')
+        elif user_input == 'no':
+            print('The correct position of the ship is marked with L.')
             the_board[value] = "L"  # Mark "L" for the correct position
             print_grid(the_board)
             print('Sorry to see you stop. Goodbye!')
-            break
-        return  # Exit the function and end the game
+            break  # Exit the loop and end the game
+            return
+        else:
+            print("Invalid input. Please enter 'yes' or 'no' only.")
 
 
 """Main function of the game"""
