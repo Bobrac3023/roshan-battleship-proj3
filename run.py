@@ -1,4 +1,5 @@
 
+
 import random
 import datetime
 from pytz import timezone
@@ -61,7 +62,6 @@ def play_game():
         else:
             print("OOPS you missed !!!. The ship's location is at L")
             the_board[code_generator] = "X"  # Mark X for a miss on the board
-            the_board[value] = "L"  # Mark "L" for the correct position
         """ print updated grid """
         print_grid(the_board)
         continue_game()
@@ -86,6 +86,9 @@ def continue_game():
 
         else:
             user_input == 'no'
+            print('the correct position of ship is marked with L')
+            the_board[value] = "L"  # Mark "L" for the correct position
+            print_grid(the_board)
             print('Sorry to see you stop. Goodbye!')
             break
         return  # Exit the function and end the game
@@ -109,4 +112,3 @@ def main():
 
 
 main()
-
