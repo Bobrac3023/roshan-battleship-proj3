@@ -18,7 +18,7 @@ The choice of this game for this project is to present the **user** with a game 
 - A **print_grid** function prints the **3x3** grid and displays numbers from **1 to 9**.This grid is used for visual 
   representation of the ship location, hits and misses during the game.
 - A **match** function **checks and matches** the  **user_input** with input from the **random module**.
-- A **play_game** function used to play the game.This function checks if user_input matches the value of the **code_generator**.
+- A **play_game** function is used to play the game.This function checks if user_input matches the value of the **code_generator**.
     - Based on the outcome it marks the board with an **X** for a miss, **H** for a hit and **L** for the correct position,with relevant messages 
       displayed on the screen.
     - **Input validation** and **data type validation** is used when seeking user input for the ship's location.
@@ -38,7 +38,7 @@ The choice of this game for this project is to present the **user** with a game 
     - The main function includes the **print_board** function
     - The code then moves on to generate the **random number** between **1 and 9**
     - The **play_game** function is then initialised to start the game
-    - The **continue_game** fuction is called from within the **play_game** function  
+    - The **continue_game** function is called from within the **play_game** function  
 
 - A mindmanger map explains the logic below.
 
@@ -258,8 +258,6 @@ https://roshan-battleship-proj3-06066cd9a93e.herokuapp.com/
     https://pythontutor.com/cp/composingprograms.html#mode=edit.  
 
 - **PEP8 style guide**  
-    https://pep8.org/  
-    https://realpython.com/python-pep8/
     https://pep8ci.herokuapp.com/#
   
 ## Content creation assistance- reference code
