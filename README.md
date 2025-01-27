@@ -63,6 +63,9 @@ The choice of this game for this project is to present the ***user*** with a gam
 
 - Use color packages like **colorama** or **termcolor** to print bold text.  
 - Display images using libraries like **openCV**, **matplotlib**, **pillow** or **tensorflow**.
+- when the user hits the jackpot, it is assumed that the user will exit the game.The logic if user chooses to continue 
+  the game would provide the user with a board where the ship's location is marked with a **H**.
+![play_game_user_hits_jackpot](readme.doc/play_game_user_hits_jackpot.png)  
 
 
 ## Install pytz package and configure timezone
@@ -109,32 +112,40 @@ The choice of this game for this project is to present the ***user*** with a gam
 ### Test,validate and visualize "play_game" function
 
 **User is asked to guess a number** 
+- it is important to understand that every miss is marked with a **X**, when the board is printed again.
 
-![user_input_guess_ship_1](readme.doc/user_input_guess_ship_1.png)
+![play_game_user_input_guess_ship_1](readme.doc/play_game_user_input_guess_ship_1.png)
 
-**user choose to continue- input from user to prompt is "YES"** 
-
-![user_choose_continue](readme.doc/user_choose_continue.png)
 
 **user input validation and data type validation**
 ![input_type_and_data_type_validation](readme.doc/input_type_and_data_type_validation.png)
 
 ### Test,validate and visualize "continue_game" function
 
-**user inputs YES- game continues** 
+**user choose to continue- input from user to prompt is "YES"** 
 
-![continue_game_yes](readme.doc/continue_game_yes.png)
+![play_game_user_choose_yes](readme.doc/play_game_user_choose_yes.png)
 
 **user inputs NO- game terminates**
+
+- When user selects the **no** option the program terminates.
+- Before termination the board with the correct ship's location marked with **L** is displayed
+- A goodbye message is also printed for the user.  
 
 ![continue_game_no](readme.doc/continue_game_no.png)
 
 **user input validation- Remember we are not testing for data type validation**
 
+- The **while len** method is used to check if the **user_input** is **greater** than **2**.
+- However, if the user inputs an **integer** or **string** greater than **2** then game exits
+
 ![continue_play_input_validation](readme.doc/continue_play_input_validation.png)
 
 
 **user input - strip and lower functions**
+
+ - **strip** function used to remove leading and trailing whitespaces.
+ - **lower** function used to return string in lower case.
 
 ![continue_game_lower_strip](readme.doc/continue_game_lower_strip.png)
 
