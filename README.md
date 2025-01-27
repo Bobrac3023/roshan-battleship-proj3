@@ -32,8 +32,8 @@ The choice of this game for this project is to present the **user** with a game 
     - The input solicited from the user is a **yes** or **no**. 
     - **strip** function used to remove leading and trailing whitespaces.
     - **lower** function used to return string in lower case.
-    - The **while len** method is used to check if the **user_input** is **greater** than **2**.
-    - However, if the user inputs an **integer** or **string** greater than **2** then game exits
+    - The user input is checked for **input type** and **data input type** validation.
+    - The user has to input **"yes"** or **"no"** only. No other integer, string or float is allowed.
 - A **main** function is used to initialise the game.
     - The main function includes the **print_board** function
     - The code then moves on to generate the **random number** between **1 and 9**
@@ -97,7 +97,7 @@ The choice of this game for this project is to present the **user** with a game 
 
 ### Code Institute PEP8 Linter test output
 ![pep8ci_linter_output_0](readme.doc/pep8ci_linter_output_0.png)
-![pep8ci_linter_output](readme.doc/pep8ci_linter_output.png)
+![pep8ci_linter_output_1](readme.doc/pep8ci_linter_output_1.png)
 
 ## Code Testing 
 
@@ -105,18 +105,19 @@ The choice of this game for this project is to present the **user** with a game 
 
 - **programmiz.com** - an online python compiler  https://www.programiz.com/online-compiler/7oVd1BFsuE3Bd.  
 - **pythontutor** - Visualize code execution  https://pythontutor.com/cp/composingprograms.html#mode=edit.  
-- **gitpod IDE environment**  https://bobrac3023-roshanbattle-cv53bgpnc73.ws-us115.gitpod.io/.  
 
 
 ### Test,validate and visualize "play_game" function
 
 **User is asked to guess a number** 
+
 - it is important to understand that every miss is marked with a **X**, when the board is printed again.
 
 ![play_game_user_input_guess_ship_1](readme.doc/play_game_user_input_guess_ship_1.png)
 
 
 **user input validation and data type validation**
+
 ![input_type_and_data_type_validation](readme.doc/input_type_and_data_type_validation.png)
 
 ### Test,validate and visualize "continue_game" function
@@ -138,7 +139,9 @@ The choice of this game for this project is to present the **user** with a game 
 - The user is prompted to input **yes** or **no**
 - **user_input** is checked for **input validation** and **data type validation**
 
-![continue_play_input_validation](readme.doc/continue_play_input_validation.png)
+![continue_play_input_validation_no](readme.doc/continue_play_input_validation_no.png)
+
+![continue_play_input_validation_yes](readme.doc/continue_play_input_validation_yes.png)
 
 
 **user input - strip and lower functions**
